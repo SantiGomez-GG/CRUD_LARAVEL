@@ -46,6 +46,7 @@
                             <td>{{ $product->updated_at}}</td>
                             <td>
                             
+                                <a href="{{ route('products.show', $product->id) }}" class="btn btn-info">Ver</a>
                                 <a href="{{ route('products.edit', $product->id) }}"><button class="btn btn-warning">Editar</button></a>
 
                                 <form action="{{ route('products.destroy', $product->id) }}" method="POST">
